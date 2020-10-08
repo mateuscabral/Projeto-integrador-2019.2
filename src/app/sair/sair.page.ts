@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController, MenuController } from '@ionic/angular';
-import { AngularFireAuth } from '@angular/fire/auth/auth';
 
 @Component({
   selector: 'app-sair',
@@ -8,19 +6,10 @@ import { AngularFireAuth } from '@angular/fire/auth/auth';
   styleUrls: ['./sair.page.scss'],
 })
 export class SairPage implements OnInit {
-  
-  constructor(private navCtrl : NavController,
-  private auth: AngularFireAuth,
-  private menuCtrl : MenuController) { }
+
+  constructor() { }
+
   ngOnInit() {
-  this.logout();
   }
- 
-  logout(){
-  this.auth.signOut().then(data=>{
-  this.menuCtrl.enable(false);
-  this.navCtrl.navigateRoot(['/login']);
-  })
-  }
- } 
- 
+
+}

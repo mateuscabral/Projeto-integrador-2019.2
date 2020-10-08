@@ -7,6 +7,7 @@ import { MenuController, NavController } from '@ionic/angular';
  styleUrls: ['./sair.page.scss'],
 })
 export class SairPage implements OnInit {
+    
  constructor(private navCtrl : NavController,
  private auth: AngularFireAuth,
  private menuCtrl : MenuController) { }

@@ -13,22 +13,22 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'Clientes',
-      url: 'clientes',
+      title: 'Home',
+      url: '/clientes',
       icon: 'mail'
     },
     {
       title: 'Novo Cliente',
-      url: 'clientes-novo',
-      icon: 'mail'
+      url: '/clientes-novo',
+      icon: 'paper-plane'
     },
     {
       title: 'Sair',
-      url: 'sair',
+      url: '/sair',
       icon: 'exit'
     },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  public labels = [];
 
   constructor(
     private platform: Platform,
