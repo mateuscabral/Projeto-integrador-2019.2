@@ -16,6 +16,7 @@ import { environment } from 'src/environments/environment';
 import { ClienteService } from './services/cliente.service';
 
 
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -28,7 +29,11 @@ import { ClienteService } from './services/cliente.service';
     AngularFirestoreModule,
     AngularFireStorageModule
 
+<<<<<<< HEAD
   ],
+=======
+    ],
+>>>>>>> e79c85983bad32024b0acac33544fe97d74b74df
   providers: [
     StatusBar,
     SplashScreen,
