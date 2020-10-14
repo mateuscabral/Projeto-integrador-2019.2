@@ -11,7 +11,7 @@ import { TemplateService } from '../services/template.service';
 })
 export class LoginPage implements OnInit {  
 
-//admin@admin.com
+//admin2@admin.com
 //123456
 
  formGroup : FormGroup;
